@@ -1,4 +1,4 @@
-from servicios import agregar_producto,mostrar_producto,calcular_estadisticas
+from servicios import agregar_producto,mostrar_producto,calcular_estadisticas,eliminar_producto
 
 
 inventario = []
@@ -23,7 +23,7 @@ def menu_principal():
             calcular_estadisticas()
             
         elif option == 4:
-            break
+            eliminar_producto()
         
 
 if __name__ == "__main__":

@@ -2,12 +2,12 @@ inventario = []
 
 
 def agregar_producto():
-
+    inventario1 = input("Ingrese el nombre del inventario: ")
     nombre =input("Ingrese el nombre del producto: ")
     precio = float(input("Ingrese el precio del producto: "))
     cantidad = int(input("Ingrese la cantidad del producto: "))
 
-    producto = {"nombre": nombre, "precio": precio, "cantidad": cantidad}
+    producto = {"inventario":inventario1,"nombre": nombre, "precio": precio, "cantidad": cantidad}
     inventario.append(producto)
     print("Agregado exitosamente")
     return
@@ -25,9 +25,27 @@ def calcular_estadisticas():
         return
     
 def mostrar_producto():
+
+
     if not inventario:
         print("")
     else:
         for l in (inventario):
-            print(f"Nombre: {l['nombre']}, Precio: {l['precio']}, {l['cantidad']}")
+            print(f"inventario:{l['inventario']},Nombre: {l['nombre']}, Precio: {l['precio']}, {l['cantidad']}")
             return
+
+def buscar_producto():
+   print("")             
+
+def actualizar_producto():
+
+    print("")   
+
+def eliminar_producto():
+
+    eliminar = input("-")
+    inventario.remove(eliminar)
+    
+    
+    print("")   
+
