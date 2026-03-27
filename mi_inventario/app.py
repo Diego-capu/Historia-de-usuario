@@ -1,4 +1,4 @@
-from servicios import agregar_producto,mostrar_producto,calcular_estadisticas,eliminar_producto
+from mi_inventario.servicios import agregar_producto,mostrar_producto,calcular_estadisticas,eliminar_producto
 
 
 inventario = []
