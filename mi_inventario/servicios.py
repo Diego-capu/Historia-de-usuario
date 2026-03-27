@@ -42,10 +42,7 @@ def mostrar_inventario(inventario):
     else:
         for producto in inventario:
             print(f"{producto['nombre']} {producto['precio']} {producto['cantidad']}")
-
-
-    
-
+   
 def buscar_producto(inventario, nombre):
     """
     Busca un producto por nombre en el inventario.
@@ -65,8 +62,6 @@ def buscar_producto(inventario, nombre):
             return producto
     
     return None
-
-    
 
 def actualizar_producto():
 
